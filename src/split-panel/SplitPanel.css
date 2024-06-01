@@ -1,0 +1,32 @@
+.split-panel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.split-panel .left {
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.split-panel .right {
+    flex-grow: 1;
+}
+
+.split-panel.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.separator {
+    background-color: grey;
+    flex-shrink: 0;
+    cursor: col-resize;
+}
+
+.split-panel.horizontal .separator {
+    width: 5px;
+    height: 100%;
+    left: 10%;
+}
